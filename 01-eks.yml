@@ -10,6 +10,9 @@ availabilityZones:
 - ap-south-1b
 managedNodeGroups:
 - name: general
+  iam:
+      withAddonPolicies:
+        autoScaler: true
   labels:
     role: general
   instanceType: t3.medium
